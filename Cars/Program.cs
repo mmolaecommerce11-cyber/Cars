@@ -6,24 +6,24 @@ namespace Cars
     {
         static void Main(string[] args)
         {
-            // 2D multidimensional array (rows x columns)
-            int[,] numbers =
+            // 2D Multidimensional Array of Car Names
+            string[,] cars =
             {
-                { 1, 4, 2 },
-                { 5, 9, 7 },
-                { 3, 6, 8 }
+                { "Toyota", "BMW", "Honda" },
+                { "Audi", "Ford", "Volkswagen" },
+                { "Mercedes", "Nissan", "Kia" }
             };
 
             // Loop through rows
-            for (int row = 0; row < numbers.GetLength(0); row++)
+            for (int row = 0; row < cars.GetLength(0); row++)
             {
                 // Loop through columns
-                for (int col = 0; col < numbers.GetLength(1); col++)
+                for (int col = 0; col < cars.GetLength(1); col++)
                 {
-                    Console.Write(numbers[row, col] + " ");
+                    Console.Write(cars[row, col] + " ");
                 }
 
-                Console.WriteLine(); // move to next row
+                Console.WriteLine(); // Move to next row
             }
         }
     }
