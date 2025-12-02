@@ -2,10 +2,11 @@
 
 namespace Cars
 {
-    class Cars
+    class CarsProgram
     {
         static void Main(string[] args)
         {
+
             string[,] cars ={ { "Lamborghini", "Ferarri", "Bugatti" },{ "Benz", "Audi", "Toyota" },{ "Uno", "Golf", "1400" } };
 
             int i = 0;
@@ -24,3 +25,4 @@ namespace Cars
         }
     }
 }
+
