@@ -11,7 +11,7 @@ namespace Cars;
 
             while (j < numbers.Length)
             {
-                Console.WriteLine(numbers[0 & 1 , j]);
+                Console.WriteLine(numbers[0 , j]);
                 j++;
             }
         }
