@@ -6,14 +6,20 @@ namespace Cars
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 1, 4, 2 };
+            int[,] numbers ={ { 1, 4, 2 },{ 5,7,3} };
 
-            int j = 0;
+            int i = 0;
 
-            while (j < numbers.Length)
+            while (i < 2)
             {
-                Console.WriteLine(numbers[j]);
-                j++;
+                int j = 0;
+                 while (j < 3)
+                {
+                      Console.WriteLine(numbers[i, j] + " ");
+                    j++;
+                }
+                 Console.WriteLine();
+                i++;
             }
         }
     }
