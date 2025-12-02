@@ -1,20 +1,18 @@
 ﻿using System;
 
-namespace Cars
-{
+namespace Cars;
     class Cars
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 1, 4, 2 };
+            int[,] numbers = {{ 1, 4, 2 },{ 5,7,3} };
 
             int j = 0;
 
             while (j < numbers.Length)
             {
-                Console.WriteLine(numbers[j]);
+                Console.WriteLine(numbers[0 & 1 , j]);
                 j++;
             }
         }
     }
-}
